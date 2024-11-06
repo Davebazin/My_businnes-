@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sommet Accounting - Your Partner in Financial Management for Small Businesses">
+    <meta name="keywords" content="Accounting, Bookkeeping, Payroll, Financial Management, Small Business, Jackson Mississippi">
+    <meta name="author" content="Sommet Accounting">
+    <title>Sommet Accounting</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+    <!-- Header Section with Business Name -->
+    <header>
+        <img src="path/to/logo.jpg" alt="Company Logo" style="width: 100px; height: auto;"> <!-- Logo image -->
+        <h1>Sommet Accounting</h1>
+        <p>Your Partner in Financial Success!</p>
+    </header>
+
+    <!-- Mission Statement Section -->
+    <section>
+        <h2>Mission Statement</h2>
+        <p>At Sommet Accounting, our mission is to empower small businesses by providing exceptional financial management services. We aim to simplify financial complexities and help businesses in Jackson, Mississippi, thrive in a competitive market. Our team of experienced accountants is dedicated to offering personalized and professional services tailored to the unique needs of each client.</p>
+        <p>Founded in 2020 by a group of passionate financial experts, Sommet Accounting started with the vision of creating a reliable financial partner for local businesses. Today, we continue to grow and innovate, helping our clients achieve financial clarity and success.</p>
+    </section>
+
+    <!-- Products and Services Section -->
+    <section>
+        <h2>Our Products and Services</h2>
+        <ul>
+            <li><strong>Bookkeeping:</strong> Comprehensive bookkeeping services to keep your financial records accurate and up-to-date.</li>
+            <li><strong>Payroll Management:</strong> Reliable payroll solutions to ensure timely and error-free payments to your employees.</li>
+            <li><strong>Financial Transaction Assistance:</strong> Guidance in handling day-to-day financial transactions with precision and efficiency.</li>
+            <li><strong>Training for Personnel:</strong> Customized training programs to enhance your team's financial management skills.</li>
+            <li><strong>Tax Preparation:</strong> Expert tax preparation and filing services to minimize your liabilities and maximize your returns.</li>
+            <li><strong>Financial Consulting:</strong> Strategic financial consulting to help you make informed decisions and grow your business.</li>
+        </ul>
+    </section>
+
+    <!-- New Product Order Form Section -->
+    <section>
+        <h2>Order Form</h2>
+        <form action="/submit-order" method="post">
+            <fieldset>
+                <legend>Select Services</legend>
+                <label for="service1">Choose Bookkeeping Service:</label>
+                <select id="service1" name="bookkeeping">
+                    <option value="basic">Basic Bookkeeping - $100/month</option>
+                    <option value="premium">Premium Bookkeeping - $200/month</option>
+                </select>
+
+                <label for="service2">Choose Payroll Management Plan:</label>
+                <select id="service2" name="payroll">
+                    <option value="standard">Standard Payroll - $150/month</option>
+                    <option value="full">Full Payroll - $250/month</option>
+                </select>
+
+                <label for="extras">Additional Services (select all that apply):</label>
+                <input type="checkbox" name="training" value="Training"> Training for Personnel - $300/session <br>
+                <input type="checkbox" name="consulting" value="Consulting"> Financial Consulting - $500/consultation <br>
+
+                <label for="quantity">Enter quantity if applicable:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+                <label for="tax-exempt">Tax Exemption:</label>
+                <input type="checkbox" id="tax-exempt" name="tax-exempt" value="Yes"> Check if applicable
+
+                <div>
+                    <button type="submit">Submit Order</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- New Feedback Form Section -->
+    <section>
+        <h2>Feedback Form</h2>
+        <form action="/submit-feedback" method="post">
+            <fieldset>
+                <legend>Your Feedback</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <h3>Bookkeeping Services</h3>
+                <input type="checkbox" name="purchased" value="bookkeeping"> I have used Bookkeeping <br>
+                <label for="bookkeeping-rating">Rate your satisfaction:</label><br>
+                <input type="radio" name="bookkeeping-rating" value="1"> 1
+                <input type="radio" name="bookkeeping-rating" value="2"> 2
+                <input type="radio" name="bookkeeping-rating" value="3"> 3
+                <input type="radio" name="bookkeeping-rating" value="4"> 4
+                <input type="radio" name="bookkeeping-rating" value="5"> 5 <br>
+                <label for="bookkeeping-comments">Comments:</label>
+                <textarea id="bookkeeping-comments" name="bookkeeping-comments" rows="4" cols="50"></textarea>
+
+                <h3>Payroll Services</h3>
+                <input type="checkbox" name="purchased" value="payroll"> I have used Payroll Management <br>
+                <label for="payroll-rating">Rate your satisfaction:</label><br>
+                <input type="radio" name="payroll-rating" value="1"> 1
+                <input type="radio" name="payroll-rating" value="2"> 2
+                <input type="radio" name="payroll-rating" value="3"> 3
+                <input type="radio" name="payroll-rating" value="4"> 4
+                <input type="radio" name="payroll-rating" value="5"> 5 <br>
+                <label for="payroll-comments">Comments:</label>
+                <textarea id="payroll-comments" name="payroll-comments" rows="4" cols="50"></textarea>
+
+                <div>
+                    <button type="submit">Submit Feedback</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sommet Accounting. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com/SommetAccounting">Facebook</a> |
+            <a href="https://www.twitter.com/SommetAccounting">Twitter</a> |
+            <a href="https://www.linkedin.com/company/SommetAccounting">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
